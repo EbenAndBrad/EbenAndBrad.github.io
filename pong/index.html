@@ -66,8 +66,9 @@
 				canvas.addEventListener("mousemove", setMousePosition, false);
 
 				function setMousePosition(e) {
-				  player.x = e.clientX;
-				}
+  mouseX = e.clientX - canvasPos.x;
+  mouseY = e.clientY - canvasPos.y;
+}
 				
 				if(keystate[UpArrow]) this.y -= 7;
 				if(keystate[DownArrow]) this.y += 7;
@@ -189,6 +190,10 @@
 		}
 
 		function update() {
+			context.beginPath();
+  context.arc(100, 100, 50, 0, 2 * Math.PI, true);
+  context.fillStyle = "#FF6A6A";
+  context.fill();
 			player.update();
 			ai.update();
 			ball.update();
