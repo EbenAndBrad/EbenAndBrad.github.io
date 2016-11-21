@@ -48,8 +48,6 @@
 		var player, ai, ball;
 		var isRunning = true;
 		var y = false;
-		var mouseX = 0;
-		var mouseY = 0;
 		var inp = prompt("are you on a phone?");
 		if(inp === "yes" || inp == "Yes"){
 		    y = true;
@@ -59,18 +57,7 @@
 			y:null,
 			width: 20,
 			height: 100,
-
-			canvas.addEventListener("mousemove", setMousePosition, false);
-
-				function setMousePosition(e) {
-  mouseX = e.clientX - canvasPos.x;
-  mouseY = e.clientY - canvasPos.y;
-}
 			update: function() {
-				
-
-				
-				
 				if(keystate[UpArrow]) this.y -= 7;
 				if(keystate[DownArrow]) this.y += 7;
 				if(keystate[82]) location.reload();
@@ -192,7 +179,6 @@
 
 		function update() {
 			player.update();
-			player.y = mouseY;
 			ai.update();
 			ball.update();
 		}
