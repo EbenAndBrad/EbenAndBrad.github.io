@@ -66,8 +66,7 @@
 				canvas.addEventListener("mousemove", setMousePosition, false);
 
 				function setMousePosition(e) {
-				  mouseX = e.clientX;
-				  mouseY = e.clientY;
+				  player.x = e.clientX;
 				}
 				
 				if(keystate[UpArrow]) this.y -= 7;
