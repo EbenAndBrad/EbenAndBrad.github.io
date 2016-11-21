@@ -41,12 +41,17 @@
 		</p>
 	</div>
 	<script>
+		
 		var WIDTH=700, HEIGHT=600, pi=Math.PI;
 		var UpArrow = 38, DownArrow = 40;
 		var canvas, ctx, keystate;
 		var player, ai, ball;
 		var isRunning = true;
-		
+		var y = false;
+		var inp = prompt("are you on a phone?");
+		if(inp === "yes" || inp == "Yes"){
+		    y = true;
+		}
 		player = {
 			x: null,
 			y:null,
@@ -55,6 +60,16 @@
 
 
 			update: function() {
+				var mouseX = 0;
+				var mouseY = 0;
+
+				canvas.addEventListener("mousemove", setMousePosition, false);
+
+				function setMousePosition(e) {
+				  mouseX = e.clientX;
+				  mouseY = e.clientY;
+				}
+				
 				if(keystate[UpArrow]) this.y -= 7;
 				if(keystate[DownArrow]) this.y += 7;
 				if(keystate[82]) location.reload();
