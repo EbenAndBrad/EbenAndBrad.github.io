@@ -64,7 +64,11 @@ body iframe {
 	color: #FFF;
 	list-style: none;
 	padding: 10px 0px 10px 10px;
-	text-align: left
+	text-align: left;
+	border: 2px solid;
+	border-color: #3c3c3c;
+	border-radius: 10px;
+	margin: 5px;
 }
 
 .nav > li {
