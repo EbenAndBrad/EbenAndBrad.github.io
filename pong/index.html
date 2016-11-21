@@ -56,6 +56,7 @@
 				if(keystate[UpArrow]) this.y -= 7;
 				if(keystate[DownArrow]) this.y += 7;
 				if(keystate[82]) location.reload();
+				if(keystate[83]) document.getElementById("canvass").style.borderRadius = "100px";
 				
 				this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0);
 			},
@@ -201,7 +202,7 @@
 		}
 
 		main();
-	</script><canvas width="700" height="600"></canvas>
+	</script><canvas width="700" height="600" id="canvass"></canvas>
 
 
 </body></html>
