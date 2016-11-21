@@ -80,7 +80,7 @@ body iframe {
 	color: #FFF;
 	border-left: 10px;
 	border-right: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 10px 11px 10px;
 }
 
 .nav > li > h {
@@ -88,17 +88,17 @@ body iframe {
 	color: #FFF;
 	border-left: 10px;
 	border-right: 10px;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 10px 11px 10px;
 }
 
 .nav > li > h:hover {
 	color:#c1c1c1;
-	background-color: #333;
+	background-color: #3c3c3c;
 }
 
 .nav > li > a:hover {
 	color:#c1c1c1;
-	background-color: #333;
+	background-color: #3c3c3c;
 }
 
 .nav li:hover ul {
