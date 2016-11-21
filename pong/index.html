@@ -48,6 +48,8 @@
 		var player, ai, ball;
 		var isRunning = true;
 		var y = false;
+		var mouseX = 0;
+		var mouseY = 0;
 		var inp = prompt("are you on a phone?");
 		if(inp === "yes" || inp == "Yes"){
 		    y = true;
@@ -60,8 +62,7 @@
 
 
 			update: function() {
-				var mouseX = 0;
-				var mouseY = 0;
+				
 
 				canvas.addEventListener("mousemove", setMousePosition, false);
 
