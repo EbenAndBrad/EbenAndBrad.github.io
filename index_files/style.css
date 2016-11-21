@@ -44,6 +44,8 @@ body p a img {
 	padding-top: 10;
 	padding-bottom: 10;
 	border-radius: 10px;
+	border: 2px solid;
+        border-color: #171717;
 }
 
 body p a img:hover {
