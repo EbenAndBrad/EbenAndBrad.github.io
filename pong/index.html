@@ -41,7 +41,6 @@
 		</p>
 	</div>
 	<script>
-		var circle = false;
 		var WIDTH=700, HEIGHT=600, pi=Math.PI;
 		var UpArrow = 38, DownArrow = 40;
 		var canvas, ctx, keystate;
@@ -56,13 +55,6 @@
 				if(keystate[UpArrow]) this.y -= 7;
 				if(keystate[DownArrow]) this.y += 7;
 				if(keystate[82]) location.reload();
-				if(keystate[83]) {
-					if(!circle){
-						circle = true;
-					}else{
-						circle = false;
-					}
-				}
 				this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0);
 			},
 			draw: function() {
@@ -180,11 +172,6 @@
 		}
 
 		function update() {
-			if(!circle){
-				document.getElementById("canvass").style.borderRadius = "300px"
-			}else{
-				document.getElementById("canvass").style.borderRadius = "10px"
-			}
 			player.update();
 			ai.update();
 			ball.update();
