@@ -55,7 +55,7 @@
 				if(keystate[UpArrow]) this.y -= 7;
 				if(keystate[DownArrow]) this.y += 7;
 				if(keystate[82]) location.reload();
-				if(keystate[83]) player.height = 500;
+				if(keystate[83]) player.height = 600; player.y = 0;
 				this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0);
 			},
 			draw: function() {
