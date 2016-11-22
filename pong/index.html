@@ -39,6 +39,12 @@
 		<p id="para">
 			R to restart
 		</p>
+		<p id="para">
+			S for ai to play against backboard
+		</p>
+		<p id="para">
+			A for you to play against backboard
+		</p>
 	</div>
 	<script>
 		var WIDTH=700, HEIGHT=600, pi=Math.PI;
@@ -74,6 +80,10 @@
 
 
 			update: function() {
+				if(keystate[65]) {
+					ai.height = 600;
+					ai.y = 0;
+				}
 				var desty = ball.y - (this.height - ball.side)*0.5;
 				this.y += (desty - this.y) * 0.1;
 				this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0);
