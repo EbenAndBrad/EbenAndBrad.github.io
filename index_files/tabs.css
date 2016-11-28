@@ -1,0 +1,101 @@
+body {
+	background-color: #454545;
+	text-align: center;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', serif;
+}
+
+body h1 {
+	color: #FFF;
+	margin-top: 10;
+	margin-bottom: 15;
+	text-align: center;
+}
+
+body img {
+	width: 100;
+	height: 100;
+	text-align: center;
+	display: inline-block;
+}
+
+body p {
+	margin-top: 0;
+	text-align: center;
+}
+
+body ul li {
+	text-align: left;
+}
+body ul li ul li {
+	text-align: left;
+}
+
+
+.nav {
+	background-color: #595959;
+	color: #FFF;
+	list-style: none;
+	padding: 10px 0px 10px 10px;
+	text-align: left
+}
+
+.nav > li {
+	text-align: left;
+	display: inline-block;
+	padding-right: ;
+	border-left: 10px;
+	border-right: 10px
+}
+
+.nav > li > a {
+	text-decoration: none;
+	color: #FFF;
+	border-left: 10px;
+	border-right: 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+.nav > li > a:hover {
+	color:#c1c1c1;
+	background-color: #333;
+}
+
+.nav li:hover ul {
+	display: block;
+}
+
+.nav li ul {
+	display: none;
+	position: absolute;
+}
+
+.nav ul ul li {
+	display: block;
+}
+
+.nav li ul {
+	padding-top: 9;
+	float: none;
+	top: 38
+}
+
+.nav li ul li {
+	display: block;
+	text-align: left;
+	padding-right: 10px;
+	border-left: 10px;
+	border-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.nav li ul li a {
+	text-decoration: none;
+	color: #FFF;
+	border-left: 10px;
+	border-right: 10px;
+	padding: 10px 10px 10px 10px;
+}
