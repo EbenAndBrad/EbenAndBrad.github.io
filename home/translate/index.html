@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="icon" type="image/png" href="icon.png" />
+		<title>Translator</title>
 		<style>
 			* {
 				font-family: sans-serif;
@@ -36,6 +38,17 @@
 			#container {
 				margin-top: 15%;
 			}
+			#text {
+			margin-top: 15px;
+  				color: #3737ae;
+  				font-size: 30px;
+  			}
+			#hidden {
+				text-decoration: underline;
+				margin: 0px;
+				color: #4242d5;
+  				font-size: 30px;
+			}
 		</style>
 	</head>
 	<body>
@@ -47,6 +60,9 @@
 			<input type="text" class="textbox inp" id="trna" placeholder="tRNA" readonly>
 			<br><br>
 			<button class="inp" id="button">Translate</button>
+			<br><br>
+			<h3 style="display: none;" id="hidden">Codon split</h3>
+			<h3 id="text">Must be in threes for split to work</h3>
 		</div>
 		<script src="translate.js"></script>
 	</body>

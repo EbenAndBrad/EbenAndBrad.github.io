@@ -8,6 +8,7 @@ document.getElementById("button").addEventListener("mousedown", function() {
 	var dna = document.getElementById("dna").value;
 	var mrna = '';
 	var trna = '';
+	var codon = '';
 	
 	//mRNA
 	for(i = 0; i < dna.length; i++) {
@@ -40,4 +41,15 @@ document.getElementById("button").addEventListener("mousedown", function() {
 		}
 	}
 	document.getElementById("trna").value = trna;
+	if(trna.length%3 === 0) {
+		for(i = 0; i < trna.length/3; i++) {
+			var s = trna.substring(i*3, (i*3)+3);
+			if((i+1)*3 !== trna.length) {
+				s += "|"
+			}
+			codon += s;
+		}
+		document.getElementById('hidden').style.display = "block";
+		document.getElementById('text').innerHTML = codon;
+	}
 });
