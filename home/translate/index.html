@@ -19,7 +19,7 @@
 				padding: 10px;
 				margin-top: 10px;
 				border: 3px solid;
-				border-color: #9e9eff;
+				border-color: #8585ff;
 				border-radius: 10px;
 			}
 			#button {
@@ -31,7 +31,20 @@
 				font-weight: 800;
 				color: #4242d5;
 			}
+			#clear {
+				padding: 10px;
+				background-color: #4c4cff;
+				border: 3px solid;
+				border-color: #4242d5;
+				border-radius: 10px;
+				font-weight: 800;
+				color: #4242d5;
+			}
 			#button:hover {
+				background-color: #4242d5;
+				color: #4c4cff;
+			}
+			#clear:hover {
 				background-color: #4242d5;
 				color: #4c4cff;
 			}
@@ -54,6 +67,8 @@
 	<body>
 		<div id="container">
 			<input type="text" class="textbox inp" id="dna" placeholder="DNA">
+			<br>
+			<input type="text" class="textbox inp" id="comp" placeholder="Compliment" readonly>
 			<br>
 			<input type="text" class="textbox inp" id="mrna" placeholder="mRNA" readonly>
 			<br>

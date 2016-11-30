@@ -3,13 +3,29 @@ console.log("\u2593  \u2593 \u2593  \u2593 \u2593   \u2593 \u2593   \u2593");
 console.log("\u2593\u2593\u2593  \u2593\u2593\u2593  \u2593\u2593\u2593\u2593\u2593 \u2593   \u2593")
 console.log("\u2593  \u2593 \u2593  \u2593 \u2593   \u2593 \u2593   \u2593");
 console.log("\u2593\u2593\u2593  \u2593  \u2593 \u2593   \u2593 \u2593\u2593\u2593\u2593");
-
+	
 document.getElementById("button").addEventListener("mousedown", function() {
 	var dna = document.getElementById("dna").value;
 	var mrna = '';
 	var trna = '';
 	var codon = '';
+	var comp = '';
 	
+	
+	//Compliment
+	for(i = 0; i < dna.length; i++) {
+		var a = dna.substring(i, i+1);
+		if(a === 'a') {
+			comp += 't';
+		}else if(a === 't') {
+			comp += 'a';
+		}else if(a === 'c') {
+			comp += 'g';
+		}else if(a === 'g') {
+			comp += 'c';
+		}
+	}
+	document.getElementById("comp").value = comp;
 	//mRNA
 	for(i = 0; i < dna.length; i++) {
 		var a = dna.substring(i, i+1);
