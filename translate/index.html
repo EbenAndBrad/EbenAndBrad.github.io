@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			* {
+				font-family: sans-serif;
+			}
+			.inp:focus {
+    			outline:none;
+			}
+			body {
+				text-align: center;
+				background-color: #4c4cff;
+			}
+			.textbox {
+				width: 500px;
+				padding: 10px;
+				margin-top: 10px;
+				border: 3px solid;
+				border-color: #9e9eff;
+				border-radius: 10px;
+			}
+			#button {
+				padding: 10px;
+				background-color: #4c4cff;
+				border: 3px solid;
+				border-color: #4242d5;
+				border-radius: 10px;
+				font-weight: 800;
+				color: #4242d5;
+			}
+			#button:hover {
+				background-color: #4242d5;
+				color: #4c4cff;
+			}
+			#container {
+				margin-top: 15%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<input type="text" class="textbox inp" id="dna" placeholder="DNA">
+			<br>
+			<input type="text" class="textbox inp" id="mrna" placeholder="mRNA" readonly>
+			<br><br>
+			<button class="inp" id="button">Translate</button>
+		</div>
+		<script src="translate.js"></script>
+	</body>
+</html>
