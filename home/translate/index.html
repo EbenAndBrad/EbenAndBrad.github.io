@@ -49,10 +49,10 @@
 				color: #4c4cff;
 			}
 			#container {
-				margin-top: 15%;
+				margin-top: 9%;
 			}
 			#text {
-			margin-top: 15px;
+				margin-top: 15px;
   				color: #3737ae;
   				font-size: 30px;
   			}
@@ -62,9 +62,65 @@
 				color: #4242d5;
   				font-size: 30px;
 			}
+			#nav {
+				list-style-type: none;
+				text-align: left;
+				display: flex;
+				padding-left: 20px;
+			} 
+			#nav li a {
+				text-decoration: none;
+				color: white;
+				padding: 10px;
+				border: 1px solid;
+				border-color: #4c4cff;
+				border-radius: 10px;
+			}
+			#nav li h {
+				background-color: #4242d5;
+				text-decoration: none;
+				color: white;
+				padding: 10px;
+				border: 1px solid;
+				border-color: #4242d5;
+				border-radius: 10px;
+			}
+			#nav li {
+				padding: 7px 2px;
+				width: auto;
+				margin-top: 13px;
+			}
+			#nav li a:hover {
+				background-color: #4242d5;
+				border-color: #4242d5;
+			}
+			#logo {
+				margin: 5px;
+			}
+			#logo img {
+			    width: 50px;
+				height: 50px;
+				margin-right: 10px;
+				border: 1px solid;
+				border-color: #4c4cff;
+				border-radius: 100px;
+			}
 		</style>
 	</head>
 	<body>
+		<div id="header">
+			<ul id="nav">
+				<div id="logo">
+					<img src="logo.png"></img>
+				</div>
+				<li><a href="https://ebenandbrad.github.io/home">Home</a></li>
+				<li><a href="https://ebenandbrad.github.io/channels">Recommended Channels</a></li>
+				<li><a href="https://ebenandbrad.github.io/pong">Pong</a></li>
+				<li><h>Translate</h></li>
+				<li><a href="https://greasyfork.org/en/scripts/25039-hangouts-enhancer">Tampermonkey</a></li>
+			</ul>
+		</div>
+		</div>
 		<div id="container">
 			<input type="text" class="textbox inp" id="dna" placeholder="DNA">
 			<br>
