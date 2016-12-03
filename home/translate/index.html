@@ -22,7 +22,7 @@
 				border-color: #8585ff;
 				border-radius: 10px;
 			}
-			#button {
+			.button {
 				padding: 10px;
 				background-color: #4c4cff;
 				border: 3px solid;
@@ -40,7 +40,7 @@
 				font-weight: 800;
 				color: #4242d5;
 			}
-			#button:hover {
+			.button:hover {
 				background-color: #4242d5;
 				color: #4c4cff;
 			}
@@ -130,7 +130,8 @@
 			<br>
 			<input type="text" class="textbox inp" id="trna" placeholder="tRNA" readonly>
 			<br><br>
-			<button class="inp" id="button">Translate</button>
+			<button class="inp button" id="button">Translate</button>
+			<button class="inp button" onclick="location.reload();">Clear</button>
 			<br><br>
 			<h3 style="display: none;" id="hidden">Codon split</h3>
 			<h3 id="text">Must be in threes for split to work</h3>
