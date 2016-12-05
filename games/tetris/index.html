@@ -19,15 +19,42 @@
 		  border-radius: 10px;
       opacity: 0.75;
     }
+    canvas:hover {
+      opacity: 1;
+    }
     #footer {
 			position: absolute;
-    	width: 100%;
+    	width: 96.3%;
     	bottom: -140;
 			margin: 10px 0;
 		}
+    #show {
+      width: 41px;
+      text-align: left;
+      margin-left: 20px;
+    }
+    #show:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   </style>
+  <script>
+    function hide() {
+      document.getElementsByClassName("nav")[0].style.display = "none";
+      document.getElementById('footer').style.display = "none";
+      document.body.style.marginBottom = "0";
+      document.getElementById("show").style.display = "block";
+    }
+    function show() {
+      document.getElementsByClassName("nav")[0].style.display = "block";
+      document.getElementById('footer').style.display = "flex";
+      document.body.style.marginBottom = "150px";
+      document.getElementById("show").style.display = "none";
+    }
+  </script>
 </head>
 <body>
+  <a id="show" style="display: none;" onclick="show();">Show</a>
 	<ul class="nav">
 		<li><a href="https://ebenandbrad.github.io/home">Home</a></li>
 		<li><a href="https://ebenandbrad.github.io/channels">Recommended Channels</a></li>
@@ -35,6 +62,7 @@
 		<li><h>Tetris</h></li>
 		<li><a href="https://ebenandbrad.github.io/home/translate">Translate</a></li>
 		<li><a href="https://greasyfork.org/en/scripts/25039-hangouts-enhancer">Tampermonkey</a></li>
+    <li><a onclick="hide();">Hide</a></li>
 	</ul>
 	<div id="game">
 		<div id="score"></div>
