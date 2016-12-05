@@ -1,9 +1,9 @@
 body {
-	background-color: #454545;
+	background: url("../files/bg.jpg");
 	text-align: center;
-	color: #FFF;
-	margin: 0;
-	padding: 50px 0px;
+	color: rgba(255,255,255,0.56);
+	margin: 0px;
+	padding: 40px 0 10px;
 	font-family: 'Arial', serif;
 }
 
@@ -12,7 +12,7 @@ body a {
 }
 
 body h1 {
-	color: #FFF;
+	color: rgba(255,255,255,0.56);
 	margin-top: 10;
 	margin-bottom: 15;
 	text-align: center;
@@ -23,6 +23,11 @@ body img {
 	height: 100;
 	text-align: center;
 	display: inline-block;
+	opacity: .95;
+}
+
+body img:hover {
+	opacity: 1;
 }
 
 body p {
@@ -45,7 +50,7 @@ body p a img {
 	padding-bottom: 10;
 	border-radius: 10px;
 	border: 2px solid;
-        border-color: #171717;
+  border-color: rgba(255,255,255,0.1);
 }
 
 body p a img:hover {
@@ -53,35 +58,57 @@ body p a img:hover {
 
 }
 
+#footer {
+	display: flex;
+	margin-top: 38px;
+	text-align: left;
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.3);
+}
+seperator {
+	margin-left: 20px
+}
+#footer h3 {
+	padding-left: 30px;
+}
+
 body iframe {
-	width:1360;
+	width: 1360;
 	border-top: 0px;
 	border-bottom: 0px;
 	border-left: 0px;
 	border-right: 0px;
+	opacity: .5;
+}
+
+body iframe:hover {
+	opacity: 1;
 }
 
 .nav {
-	background-color: #595959;
+	background-color: transparent;
 	color: #FFF;
 	list-style: none;
 	padding: 10px 0px 10px 10px;
 	text-align: left;
-	border: 2px solid;
-	border-color: #3c3c3c;
-	border-radius: 10px;
-	margin: 5px;
-	position: fixed;
-    left: 0;
-    top: 0;
-    width: 98.5%;
+	border-bottom: 2px solid;
+	border-color: rgba(255,255,255,0.1);
+	margin: 0 0 5px;
+	padding-left: 70px;
+}
+
+.nav img {
+	width: 50px;
+	height: 50px;
 }
 
 .nav > li {
 	text-align: left;
 	display: inline-block;
 	border-left: 10px;
-	border-right: 10px
+	border-right: 10px;
+	margin-bottom: 30px;
 }
 
 .nav > li > a {
@@ -98,16 +125,18 @@ body iframe {
 	border-left: 10px;
 	border-right: 10px;
 	padding: 10px 10px 11px 10px;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 2px;
 }
 
 .nav > li > h:hover {
 	color:#c1c1c1;
-	background-color: #3c3c3c;
 }
 
 .nav > li > a:hover {
 	color:#c1c1c1;
-	background-color: #3c3c3c;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 2px;
 }
 
 .nav li:hover ul {
@@ -151,4 +180,3 @@ ul ul {
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
-

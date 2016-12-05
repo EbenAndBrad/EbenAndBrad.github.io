@@ -1,28 +1,38 @@
 <html>
 <head>
-    <title>Tetris</title>
-	<link href="/files/style.css" type="text/css" rel="stylesheet">
-    <style>
-      #game {
-        color: #fff;
-        font-family: sans-serif;
-        font-size: 2em;
-        text-align: center;
-      }
-      canvas {
-		text-align: center;
-        border: solid .2em #fff;
-        height: 80vh;
-		border-radius: 10px;
-      }
-    </style>
+  <title>Tetris</title>
+	<link href="../../files/style.css" type="text/css" rel="stylesheet">
+  <style>
+  body {
+    margin-bottom: 150px
+  }
+    #game {
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 2em;
+      text-align: center;
+    }
+    canvas {
+		  text-align: center;
+      border: solid .2em #fff;
+      height: 80vh;
+		  border-radius: 10px;
+      opacity: 0.75;
+    }
+    #footer {
+			position: absolute;
+    	width: 100%;
+    	bottom: -140;
+			margin: 10px 0;
+		}
+  </style>
 </head>
 <body>
 	<ul class="nav">
 		<li><a href="https://ebenandbrad.github.io/home">Home</a></li>
 		<li><a href="https://ebenandbrad.github.io/channels">Recommended Channels</a></li>
 		<li><a href="https://ebenandbrad.github.io/games/pong">Pong</a></li>
-		<li><h style="background-color: #3c3c3c;">Tetris</h></li>
+		<li><h>Tetris</h></li>
 		<li><a href="https://ebenandbrad.github.io/home/translate">Translate</a></li>
 		<li><a href="https://greasyfork.org/en/scripts/25039-hangouts-enhancer">Tampermonkey</a></li>
 	</ul>
@@ -31,5 +41,6 @@
 		<canvas id="tetris" width="180" height="300" />
 		<script src="tetris.js"></script>
 	</div>
+  <script src="../../files/foot.js"></script>
 </body>
 </html>
