@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="unblockWebsite.png" />
+		<title>UnBlocker</title>
+		<style>
+			* {
+				font-family: sans-serif;
+				user-select: none;
+			}
+			.inp:focus {
+    			outline:none;
+			}
+			body {
+				text-align: center;
+				background-color: #4c4cff;
+			}
+			.textbox {
+				width: 850px;
+				padding: 10px 15px;
+				margin-top: 10px;
+				border: 3px solid;
+				border-color: #8585ff;
+				border-radius: 10px;
+			}
+			.button {
+				padding: 10px 15px;
+				background-color: #4c4cff;
+				border: 3px solid;
+				border-color: #4242d5;
+				border-radius: 10px;
+				font-weight: 800;
+				font-size: 30px;
+				color: #4242d5;
+			}
+			.button:hover {
+				background-color: #4242d5;
+				color: #4c4cff;
+			}
+			#container {
+				margin-top: 10vh;
+			}
+			#logo {
+				width: 200px;
+				padding: 50px 50px 40px;
+				border: 10px solid;
+				border-radius: 100px;
+			}
+			h1{
+				margin-top: 10px;
+				margin-bottom: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<img id="logo" src="./unblockWebsite.png"></img><br>
+			<h1>UnBlock Sites</h1>
+			<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="textbox inp" id="text" type="text" placeholder="Site to unblock" style="font-size: 30px;"><br>
+			<br><button class="button inp" onclick="func()" type="submit">Go</button>
+		</div>
+		<script>
+
+		function func() {
+			var site = document.getElementById("text").value;
+			if(site === "pornhub.com" || site === "redtube.com" || site === "xvideos.com"){
+				alert("Well arent you horny...")
+			}
+			if(site != null && site != "" && site.indexOf(".") > -1 && site.length > site.indexOf(".")+1) {
+				window.open("https://translate.google.com/translate?sl=es&tl=en&u="+site+"&anno=2&sandbox=1", "_blank");
+			}else if(site != null && site != "") {
+				window.open("https://google.com/search?q="+site, "_blank");
+			}
+		}
+
+		</script>
+		<script>
+		document.querySelector('#text').addEventListener('keypress', function (e) {
+			var key = e.which || e.keyCode;
+			if (key === 13) {
+			  func()
+			}
+		});
+		</script>
+	</body>
+</html>
