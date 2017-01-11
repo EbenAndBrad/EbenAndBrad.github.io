@@ -57,16 +57,18 @@
 		<div id="container">
 			<img id="logo" src="./unblockWebsite.png"></img><br>
 			<h1>UnBlock Sites</h1>
-			<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="textbox inp" id="text" type="text" placeholder="Site to unblock" style="font-size: 30px;"><br>
+			<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="textbox inp" id="text" type="text" placeholder="Site to unblock" style="font-size: 30px;" autofocus><br>
 			<br><button class="button inp" onclick="func()" type="submit">Go</button>
 		</div>
 		<script>
 
 		function func() {
 			var site = document.getElementById("text").value;
+			/*
 			if(site === "pornhub.com" || site === "redtube.com" || site === "xvideos.com"){
 				alert("Well arent you horny...")
 			}
+			*/
 			if(site != null && site != "" && site.indexOf(".") > -1 && site.length > site.indexOf(".")+1) {
 				window.open("https://translate.google.com/translate?sl=es&tl=en&u="+site+"&anno=2&sandbox=1", "_blank");
 			}else if(site != null && site != "") {
