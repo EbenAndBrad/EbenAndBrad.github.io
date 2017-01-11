@@ -39,23 +39,81 @@
 				color: #4c4cff;
 			}
 			#container {
-				margin-top: 10vh;
+				margin-top: 8vh;
 			}
-			#logo {
-				width: 200px;
+			#logo2 {
+				width: 150px;
 				padding: 50px 50px 40px;
-				border: 10px solid;
+				border: 7px solid;
 				border-radius: 100px;
 			}
 			h1{
 				margin-top: 10px;
 				margin-bottom: 25px;
 			}
+			#nav {
+				list-style-type: none;
+				text-align: left;
+				display: flex;
+				padding-left: 20px;
+			}
+			#nav li a {
+				text-decoration: none;
+				color: white;
+				padding: 10px;
+				border: 1px solid;
+				border-color: #4c4cff;
+				border-radius: 10px;
+			}
+			#nav li h {
+				background-color: #4242d5;
+				text-decoration: none;
+				color: white;
+				padding: 10px;
+				border: 1px solid;
+				border-color: #4242d5;
+				border-radius: 10px;
+			}
+			#nav li {
+				padding: 7px 2px;
+				width: auto;
+				margin-top: 13px;
+			}
+			#nav li a:hover {
+				background-color: #4242d5;
+				border-color: #4242d5;
+			}
+			#logo {
+				margin: 5px;
+			}
+			#logo img {
+			    width: 50px;
+				height: 50px;
+				margin-right: 10px;
+				border: 1px solid;
+				border-color: #4c4cff;
+				border-radius: 100px;
+				border: none;
+			}
 		</style>
 	</head>
 	<body>
+		<div id="header">
+			<ul id="nav">
+				<div id="logo">
+					<img src="logo.png"></img>
+				</div>
+				<li><a href="https://ebenandbrad.github.io/home">Home</a></li>
+				<li><a href="https://ebenandbrad.github.io/channels">Recommended Channels</a></li>
+				<li><a href="https://ebenandbrad.github.io/games/pong">Pong</a></li>
+				<li><a href="https://ebenandbrad.github.io/games/tetris">Tetris</a></li>
+				<li><a href="https://ebenandbrad.github.io/home/translate">Translate</a></li>
+				<li><h>UnBlocker</h></li>
+				<li><a href="https://greasyfork.org/en/scripts/25039-hangouts-enhancer">Tampermonkey</a></li>
+			</ul>
+		</div>
 		<div id="container">
-			<img id="logo" src="./unblockWebsite.png"></img><br>
+			<img id="logo2" src="./unblockWebsite.png"></img><br>
 			<h1>UnBlock Sites</h1>
 			<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="textbox inp" id="text" type="text" placeholder="Site to unblock" style="font-size: 30px;" autofocus><br>
 			<br><button class="button inp" onclick="func()" type="submit">Go</button>
